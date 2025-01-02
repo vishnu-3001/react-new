@@ -14,6 +14,7 @@ export default function Player(props){
     }
     function saveName(){
         setEdit((prevState)=>!prevState);
+        props.saveName(props.symbol,name);
     }
     return(
         <div className="player">

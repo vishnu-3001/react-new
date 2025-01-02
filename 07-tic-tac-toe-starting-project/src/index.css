@@ -73,8 +73,7 @@ h1 {
   width: 50%;
   border: 2px solid transparent;
 }
-
-#players.highlight-player li.active {
+ li.active {
   border-color: #f6e35a;
   animation: pulse 2s infinite ease-in-out;
 }
