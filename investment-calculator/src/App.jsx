@@ -1,8 +1,7 @@
 import Header from "./components/Header";
 import Panel from "./components/Panel";
+import Results from "./Results";
 import { useState } from "react";
-
-
 
 
 function App() {
@@ -11,13 +10,13 @@ function updateValues(label,value){
   setValues((prevState)=>{
     return {...prevState,[label]:value}
   })
-  console.log(values)
 }
 
   return (
     <div>
       <Header />
       <Panel initial_values={values} changeValues={updateValues}/>
+      <Results values={values}/>
     </div>
   )
 }
