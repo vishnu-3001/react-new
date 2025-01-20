@@ -10,7 +10,9 @@ function SideBar(props){
         <ul>
             {props.projects.map(project=>(
                 <li key={project.id}>
-                    <button className="w-full text-left px-2 py-1 rounded-sm my-1 text-stone-400">
+                    <button
+                    onClick={props.onSelectProject}
+                    className="w-full text-left px-2 py-1 rounded-sm my-1 text-stone-400">
                         {project.title}
                     </button>
                 </li>
