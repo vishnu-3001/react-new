@@ -15,6 +15,14 @@ function App() {
       };
     });
   }
+  function handleCancel(){
+    setProjectsState(prevState=>{
+      return{
+        ...prevState,
+        selectedProjectId:undefined,
+      };
+    });
+  }
   function handleAddProject(newProjectData){
     const newProject={
       ...newProjectData,
@@ -28,6 +36,15 @@ function App() {
       }
     })
   }
+  function handleSelectProject(id){
+    setProjectsState((prevState)=>{
+      return{
+        ...prevState,
+        selectedProjectId:id,
+      };
+    });
+
+  }
   let content;
   if(projectsState.selectedProjectId===undefined){
     content=false
@@ -37,9 +54,9 @@ function App() {
   }
   return (
     <main className="h-screen my-8 flex gap-8">
-     <SideBar addClick={handleAdd} projects={projectsState.projects}></SideBar>
+     <SideBar addClick={handleAdd} projects={projectsState.projects} onSelectProject={handleSelectProject}></SideBar>
      {!content&&<NoProjectSeelected onClick={handleAdd}></NoProjectSeelected>}
-     {content&&<NewProject onSave={handleAddProject}></NewProject>}
+     {content&&<NewProject onSave={handleAddProject} onCancel={handleCancel}></NewProject>}
     </main>
   );
 }
