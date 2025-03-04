@@ -1,23 +1,35 @@
-import { useState,useEffect } from "react";
 import MealItem from "./MealItem";
+import useHTTP from "./hook/UseHTTP";
+const config={method:"GET"}
+export default function Meals() {
+  // Use object destructuring as the hook returns an object
+  const { data, loading, error } = useHTTP(
+    "http://localhost:3000/meals",  // Corrected URL
+    config,              // Corrected config property
+    []
+  );
 
-export default function Meals(){
-    const [meals,setMeals]=useState([]);
-    //this will execute after component is exectued
-    useEffect(()=>{
-        async function fetchMeals(){
-            const response=await fetch('http://localhost:3000/meals');
-            if(!response.ok){
-    
-            }
-            const meals=await response.json();
-            setMeals(meals);
-        }
-        fetchMeals();
-    },[]);
-    
-return <ul id="meals">
-    {meals.map(meal => <MealItem meal={meal} key={meal.id} id={meal.id} image={meal.image} name={meal.name} description={meal.description} price={meal.price}></MealItem>)}
-</ul>
+  if (loading) {
+    return <p>Fetching meals...</p>;
+  }
 
+  if (error) {
+    return <p>Something went wrong {error.message || error}</p>;
+  }
+
+  return (
+    <ul id="meals">
+      {data.map((meal) => (
+        <MealItem
+          meal={meal}
+          key={meal.id}
+          id={meal.id}
+          image={meal.image}
+          name={meal.name}
+          description={meal.description}
+          price={meal.price}
+        />
+      ))}
+    </ul>
+  );
 }
