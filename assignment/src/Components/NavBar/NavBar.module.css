@@ -1,0 +1,24 @@
+.navBar{
+    width:85%;
+    height:15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.navButtons{
+    display: flex;;
+    gap:20px;
+}
+.rightMenu{
+    display:flex;
+    gap:20px;
+}
+.doctorInfo{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
