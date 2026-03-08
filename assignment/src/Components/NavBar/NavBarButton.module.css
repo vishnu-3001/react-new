@@ -1,0 +1,19 @@
+.navButton{
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navButton:hover{
+    background-color: #01F0D0;
+}
+
+.buttonIcon{
+    width:18px;
+    height:18px;
+    background-color:transparent;
+    margin-right: 4px;
+}

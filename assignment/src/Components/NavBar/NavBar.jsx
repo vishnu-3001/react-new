@@ -3,7 +3,7 @@ import classes from "./NavBar.module.css"
 export default function NavBar(){
     const navButtons=[{"text":"Overview","src":"./Assets/home_FILL0_wght300_GRAD0_opsz24.svg"},
         {"text":"Patients","src":"./Assets/group_FILL0_wght300_GRAD0_opsz24.svg"},
-        {"text":"Schedule","src":"./Assets/BirthIcon.svg"},
+        {"text":"Schedule","src":"./Assets/calendar.svg"},
         {"text":"Message","src":"./Assets/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg"},
         {"text":"Trasnactions","src":"./Assets/credit_card_FILL0_wght300_GRAD0_opsz24.svg"}
     ]
@@ -20,14 +20,14 @@ export default function NavBar(){
             <div className={classes.rightMenu}>
                 <div>
                     <span className={classes.doctorInfo}>
-                        <img src="./Assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc@2x.png" alt="doctor"></img>
+                        <img src="./Assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc@2x.png" alt="doctor" className={classes.doctorImg}></img>
                         <div>
                             <p>Dr.Jose Simons</p>
                             <p>General Practitioner</p>
                         </div>
                     </span>
                 </div>
-                <div>
+                <div className={classes.rightMenuIcons}>
                     <img src="./Assets/settings.svg" alt="Settings"></img>
                     <img src="./Assets/more_vert.svg" alt="more-vert"></img>
                 </div>

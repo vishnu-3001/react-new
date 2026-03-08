@@ -1,13 +1,13 @@
 .navBar{
-    width:85%;
-    height:15%;
-    margin-top: 2%;
+    height:10%;
+    margin-top: 1%;
     margin-bottom: 2%;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    padding: 0.5%;
+    border-radius: 24px;
     display: flex;
     justify-content: space-between;
     align-items:center;
+    background-color: #fff;
 }
 .navButtons{
     display: flex;;
@@ -21,4 +21,22 @@
     display:flex;
     gap:10px;
     align-items:center;
+}
+.doctorImg{
+    width:40px;
+    height:36px;
+    border-radius:50%;
+    background-color:transparent;
+}
+.rightMenu{
+    display:flex;
+    align-items: center;
+}
+.rightMenuIcons{
+}
+.rightMenuIcons img{
+    width:20px;
+    height:20px;
+    margin-right: 4px;
+    background-color:transparent;
 }
