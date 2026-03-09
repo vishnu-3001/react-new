@@ -1,0 +1,31 @@
+.patientProfileTab{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:16px;
+    cursor: pointer;
+}
+.patientProfileImg{
+    width:40px;
+    height:36px;
+    border-radius:50%;
+    background-color:transparent;
+}
+.patientProfileInfo{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8px;
+}
+.active{
+    background-color: #D8FCF7;
+}
+.patientDetails{
+    color: #707070;
+    font-size: 14px;
+}
+.patientName{
+    font-size: 14px;
+    font-weight: bold;
+    color:#072635;
+}

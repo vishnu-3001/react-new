@@ -22,8 +22,8 @@ export default function NavBar(){
                     <span className={classes.doctorInfo}>
                         <img src="./Assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc@2x.png" alt="doctor" className={classes.doctorImg}></img>
                         <div>
-                            <p>Dr.Jose Simons</p>
-                            <p>General Practitioner</p>
+                            <p className={classes.userName}>Dr.Jose Simons</p>
+                            <p className={classes.userSpecialization}>General Practitioner</p>
                         </div>
                     </span>
                 </div>
