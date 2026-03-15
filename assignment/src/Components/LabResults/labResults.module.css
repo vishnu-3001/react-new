@@ -1,0 +1,35 @@
+.labResultsContainer{
+    height:15vh;
+    background-color: #fff;
+    border-radius:24px;
+    margin-top: 5%;
+    overflow: auto;
+}
+.labHeader{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    color:#072635;
+}
+.labResultsContent{
+    margin-left:5%;
+    margin-right:5%;
+}
+.resultRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    cursor: pointer;
+}
+.resultText{
+    font-size: 13px;
+    color:#072635;
+}
+.resultIcon{
+    width:14px;
+    height:14px;
+}

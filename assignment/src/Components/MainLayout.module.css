@@ -7,3 +7,6 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.rightContainer{
+    width:20%;
+}
