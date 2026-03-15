@@ -2,3 +2,8 @@
     margin-left: 2%;
     margin-right: 2%;
 }
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
