@@ -3,12 +3,18 @@ import classes from "./MainLayout.module.css"
 import Patients from "./Patients/Patients"
 import Profile from "./Profile/Profile"
 import LabResults from "./LabResults/LabResults"
+import DiagnosticList from "./DiagnosticList/DiagnosticList"
 export default function MainLayout(){
     return(
         <div className={classes.mainLayout}>
             <NavBar />
             <div className={classes.content}>
-                <Patients />
+                <div className={classes.leftContainer}>
+                    <Patients />
+                </div>
+                <div className={classes.centerContainer}>
+                    <DiagnosticList />
+                </div>
                 <div className={classes.rightContainer}>
                     <Profile />
                     <LabResults />

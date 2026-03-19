@@ -7,6 +7,15 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.leftContainer{
+    width:20%;
+}
 .rightContainer{
     width:20%;
+}
+.centerContainer{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
