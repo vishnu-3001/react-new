@@ -3,17 +3,39 @@
     border-radius: 24px;
     height:25vh;
     width:90%;
+    overflow: auto;
 }
 .diagnosticListContent{
     display:flex;
     flex-direction: column;
-    /* align-items: center; */
     padding: 2%;
+}
+.header{
+    font-weight: 600;
+    font-size: 24px;
+    color:#072635;
+    margin: 2%;
 }
 .itemRow{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+.itemRowHeader{
+    display:flex;
+    /* justify-content: center; */
+    /* flex:1; */
+    font-weight: 600;
+    background-color: #f6f7f8;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border-radius: 24px;
+}
+.itemRowContent{
+    display:flex;
+    justify-content: start;
+    flex:1;
+    padding-left: 2%;
 }

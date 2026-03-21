@@ -35,6 +35,7 @@
     flex-direction: row;
     margin-top: 2%;
     margin-bottom: 2%;
+    padding-left: 5%;
     gap:10%;
 }
 .detailLabel{
